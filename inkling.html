@@ -1,5 +1,7 @@
 <html>
 <head>
+<title> Inkling font by eli </title>
+
 <style type="text/css">
 html {
 	background-color: #f5f5f5;
@@ -8,12 +10,196 @@ html {
 	font-family: Georgia,Cambria,serif;
 	font-size: 11pt;
 }
+body {
+	position: relative;
+	background-color:#fff;
+	width: 750px;
+	margin: 0 auto;
+	padding: 15px;
+	z-index:-2;
+}
+h1, h2, h3, h4, a {
+	  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	  display: inline;
+}
+h4 {
+	margin-top: -25px;
+	margin-left: 10px;
+	color: #f38834;
+}
+p {
+	margin: 15px 0;
+}
+blockquote {
+	margin-left: 25px;
+	border-left: 1px #999 solid;
+	padding-left: 15px;
+}
+.small {
+    height: 0px;
+    overflow:hidden;
+}
+.big {
+    height: auto;
+}
+a {
+	color: #aadc00;
+	text-decoration: none;
+}
+a:hover {
+	color: #acacac;
+	border-bottom: 1px #aadc00 solid;
+}
+tt {
+	color: #000;
+}
+b i {
+	font-style: normal;
+	color: #001947;
+}
+.black {
+	background-color: #333;
+	color: #fff;
+	margin: 0 -15px;
+	padding: 0 15px;
+	overflow:hidden;
+	white-space: nowrap;
+	width:100%;
+}
+.download {
+	text-align: right;
+	margin-right: 15px;
+	z-index: 1;
+}
+.download a {
+	color: #f38834;/* orange ink color! */
+}
+.download a:hover {
+	border-bottom: none;
+	color: #0fc3b8;
+}
 </style>
-<title> frozenpandaman on github< /title>
 
-<meta http-equiv="refresh" content="0;URL=http://github.com/frozenpandaman">
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.wrapper').find('a[href="#"]').on('click', function (e) {
+		e.preventDefault();
+		this.expand = !this.expand;
+		$(this).text(this.expand?"Collapse":"Expand");
+		$(this).closest('.wrapper').find('.small, .big').toggleClass('small big');
+	});
+});
+</script>
 
 </head>
+
 <body>
+
+<h1>INKLING </h1><h2>VERSION 1.0</h2><br>
+<h4>created by eli</h4>
+
+<div style="position:absolute; right:50px; top:25px;">
+<img src="inkling.png">
+</div>
+
+<p><i>Inkling</i>, a font created from characters that appear in the game <i>Splatoon</i>—seen on Sunken Scrolls, in Octo Valley, written on in-game gear, etc.</p>
+
+<div style="text-align:center; margin:-10px 0;"><img src="preview.png"><br>
+	<h4 style="color:#0fc3b8;">DOWNLOAD BELOW!</h4></div>
+
+<p><b>17</b> distinct alphabetical glyphs (excluding rotations/mirrored versions) of this writing system have been seen in-game so far. I've vectorized and mapped each character to its closest English (Latin alphabet) equivalent, when possible, so typing English words in this font will lead to somewhat readable text. Unfortunately, Inkling is essentially gibberish—in-game Inkling text cannot be translated and in most cases has no meaning (i.e. the choice of which glyph goes to which character in this font was completely arbitrary, but made to expedite being able to type the characters you want.)<br><br>
+
+By no means does this font provide all non-English characters, as multiple multiple writing systems are shown in-game; these characters are those that are the most predominant and widely used.<br></p>
+
+<p style="margin-top: -25px;">&nbsp;
+<div class="black" style="padding: 5px 15px;"><b>IMPORTANT NOTE</b> about how this non-standard font works and how to type the 64 (!) different characters:</div><br>
+
+As seen on in-game materials, many glyphs have rotations and mirrored versions of them. I've included these characters in the font via uppercase letters and <b>ligatures</b> (make sure you don't have them disabled!)<br><br>
+
+The base glyph can be achieved by simply typing the letter in lowercase, e.g. <tt>a</tt><br>
+Vertical flips can be achieved by typing the letter in uppercase, e.g. <tt>A</tt><br>
+Horizontal flips can be achieved by typing the letter twice, e.g. <tt>aa</tt><br>
+180-degree rotations (vertical + horizontal flip) can be achieved by using both of these methods, e.g. <tt>AA</tt><br><br>
+
+The <b>comma</b> character acts as a delimiter of sorts, and should be used when typing a repeated character. <tt>aa</tt> would produce a horizontally flipped version of the base character, while <tt>a,a</tt> would type the base character twice. The comma-delimiter character has zero width.<br><br>
+
+Some symmetrical characters have no need for certain mirrors (e.g. 'E' and vertically-flipped 'E' are identitcal). Typing these characters twice will simply result in two of the glyph—the comma delimiter does not have to be used here. This applies to the following characters: <tt>entEINT</tt>
+</p>
+
+<div class="black" style="height: 4px;"></div>
+
+<p>
+<b><i>Available characters:</i></b>
+<blockquote>Alphanumeric: <tt>abcdehi&iacute;jklno&oacute;qtuxyABCDEHIJKLNO&Oacute;QTUXY012456789</tt>
+<br><br>
+
+Punctuation: <tt>-. !?¡¿/</tt>
+<br><br>
+
+Other: <tt>@#$%^&amp;*[]{}\|=+_&lt;&gt;;&copy;&reg;</tt>
+</blockquote>
+</p>
+
+<p>
+<b><i>Unavailable characters:</i></b>
+<blockquote>
+Alphanumeric: <tt>FGMPRSVWZfgmprsvwz3</tt>
+<br><br>
+All other Unicode characters not listed above.
+</blockquote>
+</p>
+
+<div style="margin-left:15px">Typing unavailable characters in Josephine (in-game font) will give you a good, similar result, if you're trying to write blocks of text or sentences without random spaces in them. :)</div>
+
+
+<p><b><i>Special characters</i></b> worth noting:
+<blockquote>
+The double-i character can be achieved by typing <tt>i</tt> twice (provided ligature) or <tt>&iacute;</tt>
+<br><br>
+The sans-bar 'o' character is mapped to <tt>&oacute;</tt>; its vertically-flipped counterpart is mapped to <tt>&Oacute;</tt>
+</blockquote>
+</p>
+
+<div style="margin-left:15px">Letters listed under "Other" in the list of available characters above will not produce the designated character, but rather various symbols from in-game such as brands and other logos. Image-based characters are listed below:</div>
+<blockquote>
+<div class="wrapper">
+<div class="small">
+The main brands in alphabetical order are mapped to the keys <tt>@#$%^&amp;*[]{}\|</tt>.
+<br><br>
+The dolphin logo is mapped to <tt>=</tt>.
+<br><br>
+The tentacle logo is mapped to <tt>+</tt>.
+<br><br>
+The Squid Systers logo is mapped to <tt>_</tt>.
+<br><br>
+The White Tee (いか t-shirt) logo is mapped to <tt>&lt;</tt>.
+<br><br>
+The White Anchor Tee logo is mapped to <tt>&gt;</tt>.
+<br><br>
+The Splatfest logo is mapped to <tt>;</tt>.
+<br><br>
+The ヒ "copyright" symbol appearing in many logos is mapped to <tt>&copy;</tt>.
+<br><br>
+The wakaba logo found on the back of the Basic Tee is mapped to <tt>&reg;</tt>.
+</div> <a href="#">Expand</a> </div>
+</blockquote>
+</p>
+
+<p><br><i>Acknowledgements:</i>
+<ul>
+	<li>The folks at SquidBoards in <a href="http://squidboards.com/threads/inkling-the-language-of-splatoon.195/">this thread</a>, for helping figure out if the language was decipherable and discussing the language in-depth.</li>
+	<li><a href="http://vectorfriend.imgur.com/">Vectorfriend</a> from <a href="http://splatoon.ink/ink">/ink/</a>, many of whose vectorized brand logos can be found in this font.</li>
+</ul></p>
+
+<div style="text-align:center;"><h3>THIS FONT MAY NOT BE USED FOR COMMERCIAL PURPOSES.</h3></div><br>
+
+Please direct any questions to eli (frozenpandaman). Feel free to shoot me a message via <a href="http://reddit.com/u/frozenpandaman">reddit</a> or <a href="mailto:frozenpandaman@gmail.com">email</a>.<br><br><br>
+
+<div class="download"><h1><a href="Inkling.otf">DOWNLOAD</a></h1></div>
+
+<div style="position:absolute; right:31px; bottom:23px; z-index:-1; text-decoration:none!important;">
+<img src="download.png">
+</div>
+
 </body>
 </html>
